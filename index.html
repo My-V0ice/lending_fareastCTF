@@ -14,6 +14,7 @@
             <div class="logo__container">
                 <img src="./assets/img/logo.svg" alt="компьютерная безопасность" class="logo">
             </div>
+            <div class="burger"></div>
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item">
@@ -50,7 +51,9 @@
             <p class="intro__text">
                 по хабаровскому времени
             </p>
-            <img src="./assets/img/mascot.svg" alt="Маскот" class="intro__mascot">
+            <div class="mascot__container">
+                <img src="./assets/img/mascot.svg" alt="Маскот" class="intro__mascot">
+            </div>
             <img src="./assets/img/с 10_00 до 18_00.svg" alt="с 10:00 до 18:00" class="intro__time">
             <img src="./assets/img/14 ноября 2025 года.svg" alt="14 ноября 2025 года" class="intro__date">
             <img src="./assets/img/ГОРОДСКОЙ ДВОРЕЦ КУЛЬТУРЫ.svg" alt="ГОРОДСКОЙ ДВОРЕЦ КУЛЬТУРЫ" class="intro__place">
@@ -92,7 +95,7 @@
     <div class="directions">
         <div class="directions__vector directions__vector-1"></div>
         <div class="container">
-            <img src="./assets/img/ЧТО ЖДЕТ УЧАСТНИКОВ_.svg" alt="ЧТО ЖДЕТ УЧАСТНИКОВ">
+            <img src="./assets/img/ЧТО ЖДЕТ УЧАСТНИКОВ_.svg" alt="ЧТО ЖДЕТ УЧАСТНИКОВ" class="directions__title">
             <p class="directions__text">
                 Финалисты столкнутся с серией захватывающих
                 <br>заданий формата Jeopardy, охватывающих<br>
@@ -128,14 +131,32 @@
             </h2>
             <p class="present__text">
                 Следить за информацией о мероприятии можно в канале кафедры компьютерной безопасности Тихоокеанского
-                государственного университета: <a href="https://t.me/togu_KB">https://t.me/togu_KB</a>
+                государственного университета:
+                <a href="https://t.me/togu_KB" target="_blank">
+                    https://t.me/togu_KB
+                </a>
             </p>
-            <p class="present__text">
-                Пресс-центр FarEastCTF<br>
-                Тихоокеанский государственный университет (ТОГУ)<br>
-                💬 Telegram: @togu_KB<br>
-                🌐 Сайт: <a href="http://fareastctf.ru/">http://fareastctf.ru/</a>
-            </p>
+            <div class="organizers">
+                <div class="organizers__block">
+                    <span class="organizer__name">Долгачев Михаил Владимирович —</span><br>
+                    заведующий кафедрой компьютерной безопасности ТОГУ, руководитель организационного комитета
+                    FarEastCTF-2025<br>
+                    📞
+                    <a href="tel:+79145488766">
+                        <span class="organizer__tel">+7 914 548-8766</span>
+                    </a>
+                </div>
+                <div class="organizers__block">
+                    <span class="organizer__name">Хасанова Светлана Анатольевна —</span><br>
+                    координатор по взаимодействию с партнёрами<br>
+                    📞
+                    <a href="tel:+79145426010">
+                        <span class="organizer__tel">
+                            +7 914 542-6010
+                        </span>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
     <div class="container">
@@ -144,31 +165,31 @@
                 При поддержке
             </h3>
             <div class="support__grid">
-                <a href="https://mits.khabkrai.ru/">
+                <a href="https://mits.khabkrai.ru/" target="_blank">
                     <img src="./assets//img/logo-mincifri.png" height="140">
                 </a>
-                <a href="https://asi.ru/">
+                <a href="https://asi.ru/" target="_blank">
                     <img src="./assets//img/asi.png" height="140">
                 </a>
-                <a href="https://nastavnikirossii.ru/">
+                <a href="https://nastavnikirossii.ru/" target="_blank">
                     <img src="./assets//img/nr.png" height="140">
                 </a>
-                <a href="https://aciso.ru/">
+                <a href="https://aciso.ru/" target="_blank">
                     <img src="./assets//img/aciso.png" height="140">
                 </a>
-                <a href="https://znanierussia.ru/">
+                <a href="https://znanierussia.ru/" target="_blank">
                     <img src="./assets//img/logo-znaniye.png" height="140">
                 </a>
                 <a href="https://block.technology">
                     <img src="./assets//img/bt.png" height="140">
                 </a>
-                <a href="https://togudv.ru/">
+                <a href="https://togudv.ru/" target="_blank">
                     <img src="./assets//img/togu.png" height="140">
                 </a>
-                <a href="https://kdm.khabkrai.ru/">
+                <a href="https://kdm.khabkrai.ru/" target="_blank">
                     <img src="./assets//img/mhk.png" height="140">
                 </a>
-                <a href="https://www.toptopadmin.ru/">
+                <a href="https://www.toptopadmin.ru/" target="_blank">
                     <img src="./assets//img/toptop.png" height="140">
                 </a>
                 <img src="./assets//img/kontrolling.png" height="140">
@@ -177,16 +198,27 @@
                 Технические партнёры
             </h3>
             <div class="support__grid">
-                <a href="https://www.mascom-it.ru/">
+                <a href="https://www.mascom-it.ru/" target="_blank">
                     <img src="./assets//img/logo-mt.png" height="140">
                 </a>
-                <a href="https://www.redcom.ru/">
+                <a href="https://www.redcom.ru/" target="_blank">
                     <img src="./assets//img/redcom-transparent.png" height="140">
                 </a>
             </div>
         </div>
     </div>
 </main>
+
+<footer class="footer">
+    <div class="container">
+        <p>
+            РАЗРАБОТКА ДИЗАЙНА tg <a href="https://t.me/kvirkvely" target="_blank">@kvirkvely</a>
+        </p><br>
+        <p>
+            Верстка tg <a href="https://t.me/gr_elf_blood" target="_blank">@gr_elf_blood</a>
+        </p>
+    </div>
+</footer>
 
 <body>
     <script src="./assets/js/main.js"></script>
