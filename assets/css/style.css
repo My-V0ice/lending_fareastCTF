@@ -1,0 +1,350 @@
+:root {
+    --primary-text-color: #FFFFFF;
+    --secondary-text-color: #000000;
+    --tertiary-text-color: #4000FF;
+
+    --primary-background-color: #000000;
+    --secondary-background-color: #ffffff;
+    --tertiary-background-color: #2C00EB;
+}
+
+@font-face {
+    font-family: "Cygre Black";
+    src:
+        url("../fonts/ofont.ru_Cygre.ttf") format("ttf"),
+}
+
+@font-face {
+    font-family: "Cygre Medium";
+    src:
+        url("../fonts/cygre-medium.ttf") format("ttf"),
+        url("../fonts/cygre-medium.woff") format("woff"),
+        url("../fonts/cygre-medium.woff2") format("woff2"),
+}
+
+@font-face {
+    font-family: "Cygre Book";
+    src:
+        url("../fonts/cygre-book.ttf") format("ttf"),
+        url("../fonts/cygre-book.woff") format("woff"),
+        url("../fonts/cygre-book.woff2") format("woff2"),
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 24px 0;
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    width: 100%;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.nav__item {
+    padding: 4px 16px;
+}
+
+.nav__link {
+    font-size: 24px;
+    font-family: "Cygre Black", sans-serif;
+    font-weight: 900;
+    line-height: 100%;
+    color: var(--primary-text-color);
+    text-transform: uppercase;
+}
+
+.intro {
+    position: relative;
+    height: 620px;
+    padding: 80px 224px 80px 80px;
+    margin-top: 40px;
+    border-radius: 40px;
+    border: 1px solid #000000;
+    background-color: var(--tertiary-background-color);
+}
+
+.intro__title {
+    font-family: "Cygre Black", sans-serif;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+
+.intro__rect-1 {
+    position: absolute;
+    top: 410px;
+    right: -72px;
+}
+
+.intro__rect-2 {
+    position: absolute;
+    top: 489px;
+    left: -40px;
+}
+
+.intro__mascot {
+    position: absolute;
+    top: 55px;
+    left: 1059px;
+}
+
+.intro__text {
+    margin-left: 683px;
+    font-family: 'Cygre Book', sans-serif;
+    font-size: 20px;
+    font-weight: 350;
+    line-height: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
+
+.intro__time {
+    position: absolute;
+    top: 342px;
+    left: 665px;
+}
+
+.intro__date {
+    position: absolute;
+    top: 388px;
+    left: 230px;
+}
+
+.intro__place {
+    position: absolute;
+    top: 462px;
+    left: 578px;
+}
+
+.competitions {
+    margin-top: 80px;
+}
+
+.competitions__title {
+    margin: 0 auto 80px auto;
+}
+
+.competitions__content {
+    display: grid;
+    grid-template-columns: 676px 674px;
+    column-gap: 10px;
+}
+
+.competition__block {
+    position: relative;
+    font-family: 'Cygre Black', sans-serif;
+    font-size: 96px;
+    font-weight: 900;
+    letter-spacing: 0px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+}
+
+.competition__content {
+    position: relative;
+    padding: 50px 68px;
+    border-radius: 60px;
+    background-color: var(--tertiary-background-color);
+}
+
+.competition__text {
+    font-family: 'Cygre Medium', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+}
+
+
+.competition__year-1 {
+    position: absolute;
+    left: 8px;
+    top: -48px;
+}
+
+.competition__year-2 {
+    position: absolute;
+    top: -40px;
+    left: 411px;
+}
+
+.competition__block-text {
+    position: absolute;
+    top: 53px;
+    left: 38px;
+}
+
+.competition__block-padding {
+    padding-top: 115px;
+}
+
+.directions {
+    position: relative;
+    margin-top: 323px;
+    padding-top: 40px;
+    background-color: var(--secondary-background-color);
+}
+
+.directions__vector {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.directions__vector-1 {
+    position: absolute;
+    bottom: 740px;
+    height: 566px;
+    background-image: url('../img/BackVector.svg');
+
+}
+
+.directions__vector-2 {
+    position: absolute;
+    top: 775px;
+    height: 480px;
+    background-image: url('../img/BackVector.svg');
+    transform: rotate(180deg);
+    width: 100%;
+}
+
+.directions__text {
+    margin-top: 92px;
+    font-family: 'Cygre Black', sans-serif;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+}
+
+.directions__list {
+    margin-top: 70px;
+}
+
+.directions__item {
+    width: 100%;
+    padding: 10px 40px;
+    border-top: 1px solid #000000;
+}
+
+.directions__list:last-child {
+    border-bottom: 1px solid #000000;
+}
+
+
+.directions__item-text {
+    font-family: 'Cygre Black', sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+}
+
+.present {
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+    padding-top: 80px;
+    margin-top: 453px;
+    text-transform: uppercase;
+}
+
+.present__title {
+    font-family: 'Cygre Black', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 60px;
+    text-align: center;
+}
+
+.present__text {
+    font-family: 'Cygre Black', sans-serif;
+    font-size: 32px;
+    line-height: 150%;
+    font-weight: 900;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+
+.support {
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+    margin: 80px 0;
+}
+
+.support__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.support__grid img {
+    height: 140px
+}
